@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>О федерации</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Open+Sans:wght@400;600&family=Roboto&family=Roboto+Condensed:wght@700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+	<div class="wrapper">
+		<header class="header">
+			<div class="header__top">
+				<div class="container">
+					<div class="header__top-inner">
+						<a class="header__logo-link" href="#">
+							<img class="header__logo" src="img/logo.svg" alt="logo">
+						</a>
+
+						<!-- Разобраться, чем должен быть этот элемент -->
+						<div class="header__logo-text">
+							Казахстанская федерация<br>профессионального бокса
+						</div>
+
+						<div class="header__search">
+							<form class="header__search-form" action="#">
+								<input class="header__search-input" type="text" placeholder="Поиск по сайту">
+
+								<button class="header__search-btn" type="submit">
+									<img class="header__search-img" src="img/search.svg" alt="image">
+								</button>
+							</form>
+						</div>
+
+						<div class="header__lang header-lang dropdown">
+							<button class="header-lang__btn dropdown-btn" type="button">
+								<img class="header-lang__btn-img" src="img/ru-flag.png" alt="image">
+								<span class="header-lang__btn-text">RU</span>
+							</button>
+
+							<ul class="header-lang__list">
+								<li class="header-lang__list-item">
+									<a class="header-lang__list-link" href="#">
+										<img class="header-lang__list-img" src="img/ru-flag.png" alt="image">
+										<span class="header-lang__list-text">RU</span>
+									</a>
+								</li>
+
+								<li class="header-lang__list-item">
+									<a class="header-lang__list-link" href="#">
+										<img class="header-lang__list-img" src="img/eng-flag.png" alt="image">
+										<span class="header-lang__list-text">ENG</span>
+									</a>
+								</li>
+
+								<li class="header-lang__list-item">
+									<a class="header-lang__list-link" href="#">
+										<img class="header-lang__list-img" src="img/kz-flag.png" alt="image">
+										<span class="header-lang__list-text">KZ</span>
+									</a>
+								</li>
+							</ul>
+						</div>
+
+						<button class="header__burger" type="button">
+							<span class="header__burger-line"></span>
+							<span class="header__burger-line"></span>
+							<span class="header__burger-line"></span>
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="header__menu menu">
+				<div class="container">
+					<nav class="menu__nav">
+						<ul class="menu__list">
+							<li class="menu__list-item dropdown">
+								<a class="menu__list-link dropdown-btn" href="#">О ФЕДЕРАЦИИ</a>
+
+								<ul class="menu__drop-list dropdown-content">
+									<li class="menu__drop-list-item">
+										<a class="menu__drop-list-link" href="#">Общая информация</a>
+									</li>
+
+									<li class="menu__drop-list-item">
+										<a class="menu__drop-list-link" href="#">Филиалы по РК</a>
+									</li>
+								</ul>
+							</li>
+
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">БОКСЁРЫ</a>
+							</li>
+
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">ДОКУМЕНТЫ</a>
+							</li>
+
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">ПОЯС ЧЕМПИОНА РК</a>
+							</li>
+
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">КЛУБЫ</a>
+							</li>
+
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">СОТРУДНИЧЕСТВО</a>
+							</li>
+
+							<li class="menu__list-item">
+								<a class="menu__list-link" href="#">НОВОСТИ</a>
+							</li>
+						</ul>
+					</nav>
+
+					<div class="menu__border">
+						<div class="menu__border-line"></div>
+						<img class="menu__border-img" src="img/belt.svg" alt="image">
+						<div class="menu__border-line"></div>
+					</div>
+				</div>
+			</div>
+
+			<nav class="header__mobile-menu mobile-menu">
+				<ul class="mobile-menu__list">
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link mobile-menu__list-link--active">Главная</a>
+					</li>
+
+					<li class="mobile-menu__list-item dropdown">
+						<a href="#" class="mobile-menu__list-link dropdown-btn">О федерации</a>
+
+						<ul class="mobile-menu__drop-list">
+							<li class="mobile-menu__drop-item">
+								<a href="#" class="mobile-menu__drop-link">Общая информация</a>
+							</li>
+
+							<li class="mobile-menu__drop-item">
+								<a href="#" class="mobile-menu__drop-link">Филиалы по РК</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link">Боксёры</a>
+					</li>
+
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link">Пояс чемпиона РК</a>
+					</li>
+
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link">Документы</a>
+					</li>
+
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link">Клубы</a>
+					</li>
+
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link">Сотрудничество</a>
+					</li>
+
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link">Магазин</a>
+					</li>
+
+					<li class="mobile-menu__list-item">
+						<a href="#" class="mobile-menu__list-link">Новости</a>
+					</li>
+
+					<li class="mobile-menu__lang mobile-lang dropdown">
+						<button class="mobile-lang__btn dropdown-btn" type="button">
+							<img class="mobile-lang__btn-img" src="img/ru-flag.png" alt="image">
+							<span class="mobile-lang__btn-text">RU</span>
+						</button>
+
+						<ul class="mobile-lang__list">
+							<li class="mobile-lang__list-item">
+								<a class="mobile-lang__list-link" href="#">
+									<img class="mobile-lang__list-img" src="img/ru-flag.png" alt="image">
+
+									<span class="mobile-lang__list-text">RU</span>
+								</a>
+							</li>
+
+							<li class="mobile-lang__list-item">
+								<a class="mobile-lang__list-link" href="#">
+									<img class="mobile-lang__list-img" src="img/eng-flag.png" alt="image">
+
+									<span class="mobile-lang__list-text">ENG</span>
+								</a>
+							</li>
+
+							<li class="mobile-lang__list-item">
+								<a class="mobile-lang__list-link" href="#">
+									<img class="mobile-lang__list-img" src="img/kz-flag.png" alt="image">
+
+									<span class="mobile-lang__list-text">KZ</span>
+								</a>
+							</li>
+						</ul>
+					</li>
+
+					<li class="mobile-menu__search">
+						<form class="mobile-menu__search-form" action="#">
+							<input class="mobile-menu__search-input" type="text" placeholder="Поиск по сайту">
+
+							<button class="mobile-menu__search-btn" type="submit">
+								<img class="mobile-menu__search-img" src="img/search.svg" alt="image">
+							</button>
+						</form>
+					</li>
+
+					<li class="mobile-menu__footer">
+						<div class="mobile-menu__social">
+							<ul class="mobile-menu__social-list">
+								<li class="mobile-menu__social-item">
+									<a class="mobile-menu__social-link" href="#">
+										<img class="mobile-menu__social-img" src="img/youtube.svg" alt="image">
+									</a>
+								</li>
+
+								<li class="mobile-menu__social-item">
+									<a class="mobile-menu__social-link" href="#">
+										<img class="mobile-menu__social-img" src="img/instagram.svg" alt="image">
+									</a>
+								</li>
+
+								<li class="mobile-menu__social-item">
+									<a class="mobile-menu__social-link" href="#">
+										<img class="mobile-menu__social-img" src="img/facebook.svg" alt="image">
+									</a>
+								</li>
+							</ul>
+
+							<p class="mobile-menu__social-title">Фан-зона</p>
+						</div>
+
+						<div class="mobile-menu__online online">
+							<span class="online__circle"></span>
+
+							<span class="online__text">Онлайн <span class="online__value">50</span> человек</span>
+						</div>
+					</li>
+				</ul>
+				<div class="mobile-menu__background"></div>
+			</nav>
+
+			<div class="header__bottom header-bottom">
+				<div class="container">
+					<div class="header-bottom__inner">
+						<p class="header-bottom__text">
+							<span class="header-bottom__bold-text">Миссия КФПБ</span> — Развитие и популяризация индустрии
+							профессионально бокса в Республике Казахстан. Охрана здоровья, социально правовая защита
+							профессиональных боксеров и тренеров.
+						</p>
+					</div>
+
+					<div class="header-bottom__search">
+						<div class="header-bottom__search-inner">
+							<form class="header-bottom__search-form" action="#">
+								<input class="header-bottom__search-input" type="text" placeholder="Поиск по сайту ...">
+
+								<button class="header-bottom__search-btn" type="submit">
+									<img class="header-bottom__search-img" src="img/search.svg" alt="image">
+								</button>
+							</form>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<main class="main">
+			<div class="breadcrumbs">
+				<div class="container">
+					<ul class="breadcrumbs__list">
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Главная</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">О федерации</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+			<section class="federation section">
+				<div class="container">
+					<h2 class="federation__title default-title">О федерации</h2>
+
+					<h3 class="federation__subtitle">Президент федерации</h3>
+					<div class="federation__row">
+						<p class="federation__text">
+							Казахстанская федерация профессионального бокса – сообщество инициативных людей,  объединенных во имя развития профессионального  бокса в стране и большой целью – сделать наших боксеров лучшими в мире!
+							<br>Казахстан любит бокс, казахстанцы любят своих боксеров. А они, в свою очередь, оправдывают надежды болельщиков своими успехами на мировых аренах, в честь их побед вновь и вновь поднимается наш флаг и звучит гимн. Это достойно уважения и гордости!
+							<br>В Казахстане спорт всегда был в почете, а сегодня он на особом подъеме. Мы с успехом проводим крупные мировые первенства, создаём необходимую спортивную инфраструктуру, поддерживаем создание клубов, чтобы боксом могло заниматься как можно больше людей разного возраста и социального статуса. Мы стремимся к активному приобщению молодежи к здоровому образу жизни, ведь бокс – это красивый спорт сильных и мужественных людей, прививающий такие мощные навыки, как дисциплина и ответственность, уверенность и упорство. 
+							<br>Мы – за здоровую нацию, мы – за спортивные принципы равенства, справедливости и взаимного уважения!
+
+							<span class="federation__text-signature">— Президент федерации Реимов Кайрат Ниетбаевич</span>
+						</p>
+
+						<div class="federation__img-wrapper federation__first-img">
+							<img class="federation__img" src="img/content/federation/1.jpg" alt="image">
+						</div>
+					</div>
+
+					<h3 class="federation__subtitle">Почетный президент федерации</h3>
+					<div class="federation__row">
+						<div class="federation__img-wrapper federation__second-img">
+							<img class="federation__img" src="img/content/federation/2.jpg" alt="image">
+						</div>
+
+						<p class="federation__text">
+							Бокс пришел в мою жизнь неожиданно и навсегда. Сейчас могу сказать, что бокс – это и есть моя жизнь, достижения и успехи в которой неразрывно связаны со спортом. Системность и дисциплина, упорство в достижении целей и воля к победе – основные качества, приобретенные за годы тренировок и приведших к моим жизненным триумфам. 
+							<br>Я благодарен личному тренеру и огромному количеству своих болельщиков, которые верили в меня! В нашей стране бокс принято считать спортом N1, у нас очень много ярких звезд как в любительском, так и профессиональном боксе. И по сей день продолжают появляться новые имена. Уверен, что Казахстан продолжит свои славные спортивные традиции и наша Федерация внесет свой вклад в развитие мирового бокса. 
+
+							<span class="federation__text-signature">— Почетный президент федерации Серик Конакбаев</span>
+						</p>
+					</div>
+
+					<h3 class="federation__subtitle">Генеральный секретарь</h3>
+					<div class="federation__row">
+						<p class="federation__text">
+							Бокс – это противостояние двух бойцов разных национальностей, разного вероисповедания, демонстрирующих силу духа и стойкость на ринге, и завоевывающих своим мастерством сердца миллионов болельщиков во всем мире. Вне ринга проходят злоба и вражда, вне ринга нет места ненависти друг к другу. История знает много примеров в боксе, когда непримиримые соперники становятся в жизни хорошими друзьями. Это еще раз доказывает огромную объединяющую силу спорта во всем мире. И бокс – не исключение.
+							<br>Мы, бывшие и действующие боксеры, а также фанаты этого благородного вида спорта, объединены во имя развития и процветания бокса. Мы приветствуем только честную битву на ринге, мы – за мир во всем мире!
+
+							<span class="federation__text-signature">— Генеральный секретарь Манкенов Болат Токтарович</span>
+						</p>
+
+						<div class="federation__img-wrapper federation__third-img">
+							<img class="federation__img" src="img/content/federation/3.jpg" alt="image">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="history section">
+				<div class="container">
+					<h2 class="history__title default-title">История федерации</h2>
+
+					<h4 class="history__subtitle">Как зарождалась федерация:</h4>
+					<ul class="history__list">
+						<li class="history__list-item">
+							5 декабря 1989 года, в г. Алма-Ата – открылся первый профессиональный клуб бокса «Казахстан». Президентом стал – Конакбаев Серик Керимбекович.
+						</li>
+
+						<li class="history__list-item">
+							С декабря 1989 по июль 1992 года – развивались сети профессиональных клубов по Республике, в городах Актау, Жамбыл, Караганда, Костанай, Семипалатинск, Шымкент.
+						</li>
+
+						<li class="history__list-item">
+							22 августа 1992 года, в Семипалатинске прошло учредительное собрание действующих спортивно-профессиональных клубов, в ходе которого было объявлено о создании «Казахстанской федерации профессионального бокса». Ее президентом был избран Серик Конакбаев.
+						</li>
+					</ul>
+
+					<h4 class="history__subtitle">Значительный вклад в развитие бокса в Казахстане внесли президенты Казахстанской федерации профессионального бокса:</h4>
+					<ul class="history__list">
+						<li class="history__list-item">
+							1992 – 2003 гг. – Серик Конакбаев
+						</li>
+
+						<li class="history__list-item">
+							2003 – 2016 гг. – Виктор Демьяненко
+						</li>
+
+						<li class="history__list-item">
+							2016 – 2021 гг. – Ерлан Бекхожин
+						</li>
+					</ul>
+
+					<h4 class="history__subtitle">А также вице-президенты: </h4>
+					<ul class="history__list">
+						<li class="history__list-item">
+							Кайрат Шотбаков
+						</li>
+
+						<li class="history__list-item">
+							Болат Манкенов
+						</li>
+
+						<li class="history__list-item">
+							Болат Кесикбаев
+						</li>
+					</ul>
+
+					<p>
+						С 2021 года Казахстанскую федерацию профессионального бокса возглавляет Кайрат Реимов. 
+						Федерация является единственным аффилированным членом Всемирного боксерского совета (WBC), Всемирной боксерской федерации (IBF), Всемирной боксерской ассоциации (WBA) и Всемирной боксёрской организацией (WBO) на территории Казахстана.
+					</p>
+
+					<p>
+						С ___ года принимает участие в ежегодной конвенции Всемирного боксерского совета. 
+						* Конвенция WBC - крупнейшее боксерское собрание в мире! Ежегодный съезд объединяет делегатов из всех стран-участниц и ведущих боксеров со всего мира. Во время съезда участники обсуждают актуальные вопросы, планы и будущие поединки. 
+					</p>
+
+					<div class="history__slider history-slider">
+						<div class="history-slider__item">
+							<img class="history-slider__img" src="img/content/history/slide-1.jpg" alt="image">
+						</div>
+
+						<div class="history-slider__item">
+							<img class="history-slider__img" src="img/content/history/slide-1.jpg" alt="image">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="titles section">
+				<div class="container">
+					<h2 class="titles__title default-title">История титулов, разыгранных на территории Республики Казахстан</h2>
+
+					<div class="titles__slider titles-slider">
+						<div class="titles-slider__item">
+							<ul class="titles-slider__list">
+								<li class="titles-slider__list-item">
+									<p class="titles-slider__list-item-title">1 декабря 1991 года. Город Рудный</p>
+
+									<p class="titles-slider__list-item-text">
+										Александр Мирошниченко против Нурлана Джанибекова (Киргизия) 
+										Титул чемпиона России в тяжелом весе
+									</p>
+								</li>
+
+								<li class="titles-slider__list-item">
+									<p class="titles-slider__list-item-title">4 декабря 1993 года. Город Алматы</p>
+
+									<p class="titles-slider__list-item-text">
+										Уилсон Родригес (Доминиканская Республика) против Хосе Родригеса (написано, что он из Казахстана)
+										Титул интер-континентального чемпиона по версии Международной Боксерской Федерации (IBF) второй полулегкий вес (58.967 кг)
+									</p>
+								</li>
+
+								<li class="titles-slider__list-item">
+									<p class="titles-slider__list-item-title">22 марта 1994 года Город Нур-Султан</p>
+
+									<p class="titles-slider__list-item-text">
+										Есболат Нурманов против Талгата Тусупова 
+										Вакантный титул чемпиона Казахстана в полулегком весе (57,153 кг)
+									</p>
+								</li>
+							</ul>
+						</div>
+
+						<div class="titles-slider__item">
+							<ul class="titles-slider__list">
+								<li class="titles-slider__list-item">
+									<p class="titles-slider__list-item-title">9 декабря 1995 года Город Алматы</p>
+
+									<p class="titles-slider__list-item-text">
+										Вадим Присяжнюк против Гильермо Маскуэро (Колумбия)
+										Вакантный титул чемпиона Пан-Азиатской Боксерской Ассоциации (PABA) во втором легком весе (63,500 кг)
+									</p>
+								</li>
+
+								<li class="titles-slider__list-item">
+									<p class="titles-slider__list-item-title">22 декабря 1996 года Город Алматы</p>
+
+									<p class="titles-slider__list-item-text">
+										Зоригу Сосорбарам (Монголия) против Марата Сихимбаева
+										Вакантный титул чемпиона Пан-Азиатской Боксерской Ассоциации (PABA) в легком весе (61,235 кг)
+									</p>
+								</li>
+
+								<li class="titles-slider__list-item">
+									<p class="titles-slider__list-item-title">24 мая 1996 года Город Алматы</p>
+
+									<p class="titles-slider__list-item-text">
+										Бахыт Аманбаев против Вадима Присяжнюка 
+										Титул Пан-Азиатской Боксерской Ассоциации (PABA) во втором легком весе (63.500 кг)
+									</p>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
+
+		<footer class="footer">
+			<div class="footer__top">
+				<div class="container">
+					<div class="footer__top-inner">
+						<div class="footer__top-column">
+							<div class="footer__contacts">
+								<div class="footer__contacts-title">Контакты и адрес</div>
+
+								<p class="footer__address">г. Алматы, пр. Абая 150/230, блок 6</p>
+
+								<p class="footer__email">info@profiboxing.kz</p>
+
+								<a class="footer__contact-btn green-btn open-popup" href="#contact-popup">Связаться с нами</a>
+							</div>
+						</div>
+						<!-- Сделать ховер на соц сети -->
+						<div class="footer__top-column">
+							<div class="footer__social">
+								<div class="footer__social-title">Подпишитесь на нас</div>
+
+								<div class="footer__social-list-wrapper">
+									<ul class="footer__social-list">
+										<li class="footer__social-item">
+											<a class="footer__social-link" href="#">
+												<img class="footer__social-img" src="img/facebook.svg" alt="image">
+											</a>
+										</li>
+
+										<li class="footer__social-item">
+											<a class="footer__social-link" href="#">
+												<img class="footer__social-img" src="img/youtube.svg" alt="image">
+											</a>
+										</li>
+
+										<li class="footer__social-item">
+											<a class="footer__social-link" href="#">
+												<img class="footer__social-img" src="img/instagram.svg" alt="image">
+											</a>
+										</li>
+									</ul>
+
+									<div class="footer__social-list-title">Фан-зона</div>
+								</div>
+
+								<div class="footer__online online">
+									<span class="online__circle"></span>
+
+									<span class="online__text">Онлайн <span class="online__value">50</span> человек</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Разобраться нужен ли тут nav -->
+			<div class="footer__menu footer-menu">
+				<div class="container">
+					<nav class="footer-menu__nav">
+						<ul class="footer-menu__list">
+							<li class="footer-menu__list-item">
+								<a class="footer-menu__list-link" href="#">БОКСЁРЫ</a>
+							</li>
+
+							<li class="footer-menu__list-item">
+								<a class="footer-menu__list-link" href="#">ДОКУМЕНТЫ</a>
+							</li>
+
+							<li class="footer-menu__list-item">
+								<a class="footer-menu__list-link" href="#">КЛУБЫ</a>
+							</li>
+
+							<li class="footer-menu__list-item">
+								<a class="footer-menu__list-link" href="#">ПАРТНЕРЫ</a>
+							</li>
+
+							<li class="footer-menu__list-item">
+								<a class="footer-menu__list-link" href="#">МАГАЗИН</a>
+							</li>
+
+							<li class="footer-menu__list-item">
+								<a class="footer-menu__list-link" href="#">НОВОСТИ</a>
+							</li>
+
+							<li class="footer-menu__list-item">
+								<a class="footer-menu__list-link" href="#">ФИЛИАЛЫ ПО РК</a>
+							</li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+
+			<div class="footer__bottom">
+				<a class="footer__logo-link" href="#">
+					<img class="footer__logo" src="img/white-logo.svg" alt="logo">
+				</a>
+
+				<a class="footer__privacy" href="#">Политика конфиденциальности</a>
+
+				<p class="footer__copy">©2021 Все права защищены</p>
+			</div>
+		</footer>
+	</div>
+
+	<button class="top-arrow" type="button"></button>
+
+	<div class="contact-popup mfp-hide" id="contact-popup">
+		<form class="contact-popup__form" action="#">
+			<div class="contact-popup__inner">
+				<button class="contact-popup__close-btn close-popup" type="button">
+					<span class="contact-popup__close-btn-line"></span>
+					<span class="contact-popup__close-btn-line"></span>
+				</button>
+
+				<div class="contact-popup__title">Отправить сообщение</div>
+
+				<textarea class="contact-popup__textarea" placeholder="Сообщение"></textarea>
+
+				<input class="contact-popup__input default-input" placeholder="Ваше имя" type="text" required>
+
+				<input class="contact-popup__input default-input" placeholder="Телефон для связи" type="text" required>
+
+				<button class="contact-popup__submit-btn white-btn" type="submit">Отправить</button>
+
+				<p class="contact-popup__privacy">
+					Нажимая на кнопку отправить вы соглашаетесь с <a class="contact-popup__privacy-link" href="#">условиями
+						конфиденциальности</a> на сайте
+				</p>
+			</div>
+		</form>
+	</div>
+
+	<script src="js/main.min.js"></script>
+</body>
+</html>
