@@ -4,12 +4,13 @@
 	<meta charset="UTF-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Список боксеров</title>
+	<title>Информация о боксере</title>
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link
 		href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;0,500;0,600;0,700;1,500&family=Open+Sans:wght@400;600&family=Roboto&family=Roboto+Condensed:wght@700&display=swap"
 		rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
@@ -147,7 +148,7 @@
 						</li>
 
 						<li class="mobile-menu__list-item">
-							<a href="#" class="mobile-menu__list-link mobile-menu__list-link--active">Боксёры</a>
+							<a href="#" class="mobile-menu__list-link">Боксёры</a>
 						</li>
 
 						<li class="mobile-menu__list-item">
@@ -277,401 +278,86 @@
 						</li>
 
 						<li class="breadcrumbs__item">
-							<a class="breadcrumbs__link" href="#">Список боксеров</a>
+							<a class="breadcrumbs__link" href="#">Боксеры</a>
+						</li>
+
+						<li class="breadcrumbs__item">
+							<a class="breadcrumbs__link" href="#">Данияр Елеусинов</a>
 						</li>
 					</ul>
 				</div>
 			</div>
 
-			<section class="boxers section">
+			<section class="boxer-info section">
 				<div class="container">
-					<div class="boxers__tabs">
-						<a class="boxers__tab tab tab--active" href="#boxers-all">Все</a>
-						<a class="boxers__tab tab" href="#boxers-men">Мужчины</a>
-						<a class="boxers__tab tab" href="#boxers-women">Женщины</a>
+					<div class="boxer-info__inner">
+						<div class="boxer-info__img-wrapper">
+							<img class="boxer-info__img" src="img/content/boxers/boxer-1.jpg" alt="image">
+						</div>
+
+						<div class="boxer-info__details">
+							<h2 class="boxer-info__name">Данияр Елеусинов</h2>
+
+							<ul class="boxer-info__list">
+								<li class="boxer-info__list-item">
+									<span class="boxer-info__list-left">Полное имя</span>
+
+									<span class="boxer-info__list-right">Данияр Елеусинов</span>
+								</li>
+
+								<li class="boxer-info__list-item">
+									<span class="boxer-info__list-left">Рекорд (В-П-Н)</span>
+
+									<span class="boxer-info__list-right">11-0-0</span>
+								</li>
+
+								<li class="boxer-info__list-item">
+									<span class="boxer-info__list-left">Весовая категория</span>
+
+									<span class="boxer-info__list-right">Welter</span>
+								</li>
+
+								<li class="boxer-info__list-item">
+									<span class="boxer-info__list-left">Страница на Boxrec</span>
+
+									<span class="boxer-info__list-right">
+										<a class="boxer-info__list-link" href="#">Смотреть</a>
+									</span>
+								</li>
+							</ul>
+
+							<div class="boxer-info__details-bottom">
+								<a class="boxer-info__share icon-share" href="#">Поделиться в соц. сетях</a>
+								<a class="boxer-info__contact white-btn" href="#">Связаться с бойцом</a>
+							</div>
+						</div>
 					</div>
+				</div>
+			</section>
 
-					<div class="boxers__tabs-content">
-						<div class="boxers__tab-content tab-content tab-content--active" id="boxers-all">
-							<div class="boxers__head">
-								<div class="boxers__total">
-									<span class="boxers__total-text">Всего:</span><span class="boxers__total-value">61</span>
-								</div>
+			<section class="boxer-gallery section">
+				<div class="container">
+					<h2 class="boxer-gallery__title default-title">Фото и видео</h2>
+					<div class="boxer-gallery__content">
+						<a class="boxer-gallery__photo" href="img/content/boxers/boxer-1.jpg" data-fancybox="gallery">
+							<img class="boxer-gallery__photo-mini" src="img/content/boxers/boxer-1.jpg" alt="image">
+						</a>
 
-								<div class="boxers__categories">
-									<form class="boxers__categories-form" action="#">
-										<select class="boxers__categories-select form-style">
-											<option selected>Все весовые категории</option>
-											<option>Mini flyweight</option>
-											<option>Light flyweight</option>
-											<option>Flyweight</option>
-											<option>Super flyweight</option>
-											<option>Bantam weight</option>
-											<option>Super bantam weight</option>
-											<option>Feather weight</option>
-											<option>Super feather weight</option>
-											<option>Light weight</option>
-											<option>Super light weight</option>
-											<option>Welter weight</option>
-											<option>Super welter weight</option>
-											<option>Middle weight</option>
-											<option>Super middle weight</option>
-											<option>Light heavy weight</option>
-											<option>Cruiser weight</option>
-											<option>Heavy weight</option>
-										</select>
-									</form>
-								</div>
+						<a class="boxer-gallery__photo" href="img/content/boxers/boxer-1.jpg" data-fancybox="gallery">
+							<img class="boxer-gallery__photo-mini" src="img/content/boxers/boxer-1.jpg" alt="image">
+						</a>
 
-								<div class="boxers__search">
-									<form class="boxers__search-form" action="#">
-										<input class="boxers__search-input" type="text" placeholder="Поиск боксеров">
-										<button class="boxers__search-btn icon-search" type="submit"></button>
-									</form>
-								</div>
-							</div>
+						<a class="boxer-gallery__photo" href="img/content/boxers/boxer-1.jpg" data-fancybox="gallery">
+							<img class="boxer-gallery__photo-mini" src="img/content/boxers/boxer-1.jpg" alt="image">
+						</a>
 
-							<div class="boxers__list">
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
+						<a class="boxer-gallery__video" href="https://youtu.be/U2uH_o3qlMc" data-fancybox="gallery">
+							<img class="boxer-gallery__photo-mini" src="img/content/boxers/boxer-1.jpg" alt="image">
+						</a>
 
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-							</div>
-
-							<div class="boxers__view-more-wrapper">
-								<a class="boxers__view-more green-btn" href="#">Показать еще</a>
-							</div>
-						</div>
-
-						<div class="boxers__tab-content tab-content" id="boxers-men">
-							<div class="boxers__head">
-								<div class="boxers__total">
-									<span class="boxers__total-text">Всего:</span><span class="boxers__total-value">58</span>
-								</div>
-
-								<div class="boxers__categories">
-									<form class="boxers__categories-form" action="#">
-										<select class="boxers__categories-select form-style">
-											<option selected>Все весовые категории</option>
-											<option>Mini flyweight</option>
-											<option>Light flyweight</option>
-											<option>Flyweight</option>
-											<option>Super flyweight</option>
-											<option>Bantam weight</option>
-											<option>Super bantam weight</option>
-											<option>Feather weight</option>
-											<option>Super feather weight</option>
-											<option>Light weight</option>
-											<option>Super light weight</option>
-											<option>Welter weight</option>
-											<option>Super welter weight</option>
-											<option>Middle weight</option>
-											<option>Super middle weight</option>
-											<option>Light heavy weight</option>
-											<option>Cruiser weight</option>
-											<option>Heavy weight</option>
-										</select>
-									</form>
-								</div>
-
-								<div class="boxers__search">
-									<form class="boxers__search-form" action="#">
-										<input class="boxers__search-input" type="text" placeholder="Поиск боксеров">
-										<button class="boxers__search-btn icon-search" type="submit"></button>
-									</form>
-								</div>
-							</div>
-
-							<div class="boxers__list">
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-							</div>
-
-							<div class="boxers__view-more-wrapper">
-								<a class="boxers__view-more green-btn" href="#">Показать еще</a>
-							</div>
-						</div>
-
-						<div class="boxers__tab-content tab-content" id="boxers-women">
-							<div class="boxers__head">
-								<div class="boxers__total">
-									<span class="boxers__total-text">Всего:</span><span class="boxers__total-value">3</span>
-								</div>
-
-								<div class="boxers__categories">
-									<form class="boxers__categories-form" action="#">
-										<select class="boxers__categories-select form-style">
-											<option selected>Все весовые категории</option>
-											<option>Mini flyweight</option>
-											<option>Light flyweight</option>
-											<option>Flyweight</option>
-											<option>Super flyweight</option>
-											<option>Bantam weight</option>
-											<option>Super bantam weight</option>
-											<option>Feather weight</option>
-											<option>Super feather weight</option>
-											<option>Light weight</option>
-											<option>Super light weight</option>
-											<option>Welter weight</option>
-											<option>Super welter weight</option>
-											<option>Middle weight</option>
-											<option>Super middle weight</option>
-											<option>Light heavy weight</option>
-											<option>Cruiser weight</option>
-											<option>Heavy weight</option>
-										</select>
-									</form>
-								</div>
-
-								<div class="boxers__search">
-									<form class="boxers__search-form" action="#">
-										<input class="boxers__search-input" type="text" placeholder="Поиск боксеров">
-										<button class="boxers__search-btn icon-search" type="submit"></button>
-									</form>
-								</div>
-							</div>
-
-							<div class="boxers__list">
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-
-								<a class="boxers__card boxer-card" href="#">
-									<div class="boxer-card__img-wrapper">
-										<img class="boxer-card__img" src="img/content/boxers/boxer-1.jpg" alt="image">
-									</div>
-		
-									<div class="boxer-card__info">
-										<p class="boxer-card__name">Имя Боксера</p>
-		
-										<p class="boxer-card__text">Весовая категория</p>
-										<p class="boxer-card__text">11-0-0 (В-П-Н)</p>
-									</div>
-								</a>
-							</div>
-						</div>
+						<a class="boxer-gallery__video" href="https://youtu.be/BhWEHweUBfA" data-fancybox="gallery">
+							<img class="boxer-gallery__photo-mini" src="img/content/boxers/boxer-1.jpg" alt="image">
+						</a>
 					</div>
 				</div>
 			</section>
@@ -843,5 +529,6 @@
 	</div>
 
 	<script src="js/main.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
 </body>
 </html>

@@ -12,19 +12,14 @@
 		rel="stylesheet">
 	<link rel="stylesheet" href="css/style.min.css">
 </head>
-<!-- ИКОНОЧНЫЙ ШРИФТ СКРОЛЛ К ВЕРХУ ПРИ НАЖАТИИ НА КНОПКУ
-Прописать имена для инпутов -->
 <body>
 	<div class="wrapper">
 		<header class="header">
 			<div class="header__top">
 				<div class="container">
 					<div class="header__top-inner">
-						<a class="header__logo-link" href="#">
-							<img class="header__logo" src="img/logo.svg" alt="logo">
-						</a>
+						<img class="header__logo" src="img/logo.svg" alt="logo">
 
-						<!-- Разобраться, чем должен быть этот элемент -->
 						<div class="header__logo-text">
 							Казахстанская федерация<br>профессионального бокса
 						</div>
@@ -33,9 +28,7 @@
 							<form class="header__search-form" action="#">
 								<input class="header__search-input" type="text" placeholder="Поиск по сайту">
 
-								<button class="header__search-btn" type="submit">
-									<img class="header__search-img" src="img/search.svg" alt="image">
-								</button>
+								<button class="header__search-btn icon-search" type="submit"></button>
 							</form>
 						</div>
 
@@ -130,131 +123,125 @@
 				</div>
 			</div>
 
-			<nav class="header__mobile-menu mobile-menu">
-				<ul class="mobile-menu__list">
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link mobile-menu__list-link--active">Главная</a>
-					</li>
+			<div class="header__mobile-menu mobile-menu">
+				<nav class="mobile-menu__nav">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link mobile-menu__list-link--active">Главная</a>
+						</li>
 
-					<li class="mobile-menu__list-item dropdown">
-						<a href="#" class="mobile-menu__list-link dropdown-btn">О федерации</a>
+						<li class="mobile-menu__list-item dropdown">
+							<a href="#" class="mobile-menu__list-link dropdown-btn">О федерации</a>
 
-						<ul class="mobile-menu__drop-list">
-							<li class="mobile-menu__drop-item">
-								<a href="#" class="mobile-menu__drop-link">Общая информация</a>
-							</li>
+							<ul class="mobile-menu__drop-list">
+								<li class="mobile-menu__drop-item">
+									<a href="#" class="mobile-menu__drop-link">Общая информация</a>
+								</li>
 
-							<li class="mobile-menu__drop-item">
-								<a href="#" class="mobile-menu__drop-link">Филиалы по РК</a>
-							</li>
-						</ul>
-					</li>
+								<li class="mobile-menu__drop-item">
+									<a href="#" class="mobile-menu__drop-link">Филиалы по РК</a>
+								</li>
+							</ul>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Боксёры</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Боксёры</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Пояс чемпиона РК</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Пояс чемпиона РК</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Документы</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Документы</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Клубы</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Клубы</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Сотрудничество</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Сотрудничество</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Магазин</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Магазин</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Новости</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Новости</a>
+						</li>
 
-					<li class="mobile-menu__lang mobile-lang dropdown">
-						<button class="mobile-lang__btn dropdown-btn" type="button">
-							<img class="mobile-lang__btn-img" src="img/ru-flag.png" alt="image">
-							<span class="mobile-lang__btn-text">RU</span>
-						</button>
-
-						<ul class="mobile-lang__list">
-							<li class="mobile-lang__list-item">
-								<a class="mobile-lang__list-link" href="#">
-									<img class="mobile-lang__list-img" src="img/ru-flag.png" alt="image">
-
-									<span class="mobile-lang__list-text">RU</span>
-								</a>
-							</li>
-
-							<li class="mobile-lang__list-item">
-								<a class="mobile-lang__list-link" href="#">
-									<img class="mobile-lang__list-img" src="img/eng-flag.png" alt="image">
-
-									<span class="mobile-lang__list-text">ENG</span>
-								</a>
-							</li>
-
-							<li class="mobile-lang__list-item">
-								<a class="mobile-lang__list-link" href="#">
-									<img class="mobile-lang__list-img" src="img/kz-flag.png" alt="image">
-
-									<span class="mobile-lang__list-text">KZ</span>
-								</a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="mobile-menu__search">
-						<form class="mobile-menu__search-form" action="#">
-							<input class="mobile-menu__search-input" type="text" placeholder="Поиск по сайту">
-
-							<button class="mobile-menu__search-btn" type="submit">
-								<img class="mobile-menu__search-img" src="img/search.svg" alt="image">
+						<li class="mobile-menu__lang mobile-lang dropdown">
+							<button class="mobile-lang__btn dropdown-btn" type="button">
+								<img class="mobile-lang__btn-img" src="img/ru-flag.png" alt="image">
+								<span class="mobile-lang__btn-text">RU</span>
 							</button>
-						</form>
-					</li>
 
-					<li class="mobile-menu__footer">
-						<div class="mobile-menu__social">
-							<ul class="mobile-menu__social-list">
-								<li class="mobile-menu__social-item">
-									<a class="mobile-menu__social-link" href="#">
-										<img class="mobile-menu__social-img" src="img/youtube.svg" alt="image">
+							<ul class="mobile-lang__list">
+								<li class="mobile-lang__list-item">
+									<a class="mobile-lang__list-link" href="#">
+										<img class="mobile-lang__list-img" src="img/ru-flag.png" alt="image">
+
+										<span class="mobile-lang__list-text">RU</span>
 									</a>
 								</li>
 
-								<li class="mobile-menu__social-item">
-									<a class="mobile-menu__social-link" href="#">
-										<img class="mobile-menu__social-img" src="img/instagram.svg" alt="image">
+								<li class="mobile-lang__list-item">
+									<a class="mobile-lang__list-link" href="#">
+										<img class="mobile-lang__list-img" src="img/eng-flag.png" alt="image">
+
+										<span class="mobile-lang__list-text">ENG</span>
 									</a>
 								</li>
 
-								<li class="mobile-menu__social-item">
-									<a class="mobile-menu__social-link" href="#">
-										<img class="mobile-menu__social-img" src="img/facebook.svg" alt="image">
+								<li class="mobile-lang__list-item">
+									<a class="mobile-lang__list-link" href="#">
+										<img class="mobile-lang__list-img" src="img/kz-flag.png" alt="image">
+
+										<span class="mobile-lang__list-text">KZ</span>
 									</a>
 								</li>
 							</ul>
+						</li>
 
-							<p class="mobile-menu__social-title">Фан-зона</p>
-						</div>
+						<li class="mobile-menu__search">
+							<form class="mobile-menu__search-form" action="#">
+								<input class="mobile-menu__search-input" type="text" placeholder="Поиск по сайту">
 
-						<div class="mobile-menu__online online">
-							<span class="online__circle"></span>
+								<button class="mobile-menu__search-btn icon-search" type="submit"></button>
+							</form>
+						</li>
 
-							<span class="online__text">Онлайн <span class="online__value">50</span> человек</span>
-						</div>
-					</li>
-				</ul>
-				<div class="mobile-menu__background"></div>
-			</nav>
+						<li class="mobile-menu__footer">
+							<div class="mobile-menu__social">
+								<ul class="mobile-menu__social-list">
+									<li class="mobile-menu__social-item">
+										<a class="mobile-menu__social-link icon-youtube" href="#"></a>
+									</li>
+
+									<li class="mobile-menu__social-item">
+										<a class="mobile-menu__social-link icon-instagram" href="#"></a>
+									</li>
+
+									<li class="mobile-menu__social-item">
+										<a class="mobile-menu__social-link icon-facebook" href="#"></a>
+									</li>
+								</ul>
+
+								<p class="mobile-menu__social-title">Фан-зона</p>
+							</div>
+
+							<div class="mobile-menu__online online">
+								<span class="online__circle"></span>
+
+								<span class="online__text">Онлайн <span class="online__value">50</span> человек</span>
+							</div>
+						</li>
+					</ul>
+					<div class="mobile-menu__background"></div>
+				</nav>
+			</div>
 
 			<div class="header__bottom header-bottom">
 				<div class="container">
@@ -271,9 +258,7 @@
 							<form class="header-bottom__search-form" action="#">
 								<input class="header-bottom__search-input" type="text" placeholder="Поиск по сайту ...">
 
-								<button class="header-bottom__search-btn" type="submit">
-									<img class="header-bottom__search-img" src="img/search.svg" alt="image">
-								</button>
+								<button class="header-bottom__search-btn icon-search" type="submit"></button>
 							</form>
 						</div>
 					</div>
@@ -287,16 +272,16 @@
 					<div class="top__inner">
 						<div class="top__column top__left-column">
 							<div class="top__news top-news">
-								<h4 class="top-news__title">Новости</h4>
+								<h2 class="top-news__title">Новости</h2>
 
 								<a class="top-news__item" href="#">
 									<div class="top-news__item-date">27 июня, 2021 г.</div>
 
 									<div class="top-news__item-inner">
-										<img class="top-news__item-img" src="img/content/top/news-1.png" alt="image">
+										<img class="top-news__item-img" src="img/content/top/news-1.jpg" alt="image">
 
 										<div class="top-news__item-right">
-											<h5 class="top-news__item-title">Жанибек Алимханулы одержал победу над Робом</h5>
+											<h3 class="top-news__item-title">Жанибек Алимханулы одержал победу над Робом</h3>
 
 											<p class="top-news__item-text">
 												С первых минут казахстанский средневес занял центр Lorem ipsum dolor sit amet.
@@ -309,10 +294,10 @@
 									<div class="top-news__item-date">1 июля, 2020г.</div>
 
 									<div class="top-news__item-inner">
-										<img class="top-news__item-img" src="img/content/top/news-2.png" alt="image">
+										<img class="top-news__item-img" src="img/content/top/news-2.jpg" alt="image">
 
 										<div class="top-news__item-right">
-											<h5 class="top-news__item-title">Конвенция всемирной боксерской организации</h5>
+											<h3 class="top-news__item-title">Конвенция всемирной боксерской организации</h3>
 
 											<p class="top-news__item-text">
 												Первый день 99й интерактивной конвенции Всемирной Lorem ipsum dolor sit amet.
@@ -325,10 +310,10 @@
 									<div class="top-news__item-date">22 мая, 2020 г.</div>
 
 									<div class="top-news__item-inner">
-										<img class="top-news__item-img" src="img/content/top/news-3.png" alt="image">
+										<img class="top-news__item-img" src="img/content/top/news-3.jpg" alt="image">
 
 										<div class="top-news__item-right">
-											<h5 class="top-news__item-title">Результаты матча боксеров профессионалов Lorem.</h5>
+											<h3 class="top-news__item-title">Результаты матча боксеров профессионалов Lorem.</h3>
 
 											<p class="top-news__item-text">
 												22 мая в городе Алматы, на арене спортивного комплекса “Абылай Lorem ipsum dolor sit
@@ -342,10 +327,10 @@
 									<div class="top-news__item-date">11 февраля, 2020г.</div>
 
 									<div class="top-news__item-inner">
-										<img class="top-news__item-img" src="img/content/top/news-4.png" alt="image">
+										<img class="top-news__item-img" src="img/content/top/news-4.jpg" alt="image">
 
 										<div class="top-news__item-right">
-											<h5 class="top-news__item-title">Семинар катменов в Алматы 2020 год</h5>
+											<h3 class="top-news__item-title">Семинар катменов в Алматы 2020 год</h3>
 
 											<p class="top-news__item-text">
 												В 2020 году с подачи Болата Манкенова и Виктора Демьяненко в Lorem ipsum dolor sit
@@ -384,22 +369,21 @@
 								</div>
 							</div>
 
-							<!-- Разобраться с изменением цвета svg -->
 							<div class="top__slider top-slider">
 								<a class="top-slider__item" href="#">
-									<img src="img/content/top/slide-1.png" alt="image" class="top-slider__img">
+									<img src="img/content/top/slide-1.jpg" alt="image" class="top-slider__img">
 
 									<p class="top-slider__text">Жанибек Алимханулы одержал победу над Робом Брантом</p>
 								</a>
 
 								<a class="top-slider__item" href="#">
-									<img src="img/content/top/slide-2.png" alt="image" class="top-slider__img">
+									<img src="img/content/top/slide-2.jpg" alt="image" class="top-slider__img">
 
 									<p class="top-slider__text">Семинар катменов в Алматы 2020 год</p>
 								</a>
 
 								<a class="top-slider__item" href="#">
-									<img src="img/content/top/slide-3.png" alt="image" class="top-slider__img">
+									<img src="img/content/top/slide-3.jpg" alt="image" class="top-slider__img">
 
 									<p class="top-slider__text">Конвенция всемирной боксерской ассоциации (WBA) 2020 год</p>
 								</a>
@@ -430,28 +414,12 @@
 								канал и не пропустите ничего важного
 							</p>
 
-							<a class="channel__link white-btn" href="#">
-								<span class="channel__link-text">Перейти на канал</span>
-
-								<svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-									<path
-										d="M26.4372 3.32034C26.2843 2.77497 25.9865 2.28123 25.5755 1.89159C25.1528 1.48997 24.6347 1.20268 24.0702 1.05684C21.9575 0.499963 13.493 0.499964 13.493 0.499964C9.96421 0.459815 6.43633 0.636397 2.92922 1.02871C2.36468 1.18533 1.8476 1.47904 1.42397 1.88371C1.00772 2.28421 0.706218 2.77809 0.548718 3.31921C0.170372 5.35742 -0.0134537 7.42697 -0.000282231 9.49996C-0.0137822 11.5711 0.169593 13.64 0.548718 15.6807C0.702843 16.2196 1.00322 16.7112 1.42059 17.1083C1.83797 17.5055 2.35772 17.7923 2.92922 17.9442C5.07009 18.5 13.493 18.5 13.493 18.5C17.0262 18.5402 20.5586 18.3636 24.0702 17.9712C24.6347 17.8254 25.1528 17.5381 25.5755 17.1365C25.9917 16.7393 26.2876 16.2455 26.4361 15.7077C26.8243 13.6703 27.0131 11.5999 26.9997 9.52584C27.0289 7.44302 26.8404 5.36285 26.4372 3.31921V3.32034ZM10.802 13.352V5.64909L17.8445 9.50109L10.802 13.352Z"
-										fill="#fff" />
-								</svg>
-							</a>
+							<a class="channel__link white-btn" href="#">Перейти на канал</a>
 						</div>
 					</div>
 
 					<div class="channel__mobile-link-wrapper">
-						<a class="channel__link channel__mobile-link white-btn" href="#">
-							<span class="channel__link-text">Перейти на канал</span>
-
-							<svg width="27" height="19" viewBox="0 0 27 19" fill="none" xmlns="http://www.w3.org/2000/svg">
-								<path
-									d="M26.4372 3.32034C26.2843 2.77497 25.9865 2.28123 25.5755 1.89159C25.1528 1.48997 24.6347 1.20268 24.0702 1.05684C21.9575 0.499963 13.493 0.499964 13.493 0.499964C9.96421 0.459815 6.43633 0.636397 2.92922 1.02871C2.36468 1.18533 1.8476 1.47904 1.42397 1.88371C1.00772 2.28421 0.706218 2.77809 0.548718 3.31921C0.170372 5.35742 -0.0134537 7.42697 -0.000282231 9.49996C-0.0137822 11.5711 0.169593 13.64 0.548718 15.6807C0.702843 16.2196 1.00322 16.7112 1.42059 17.1083C1.83797 17.5055 2.35772 17.7923 2.92922 17.9442C5.07009 18.5 13.493 18.5 13.493 18.5C17.0262 18.5402 20.5586 18.3636 24.0702 17.9712C24.6347 17.8254 25.1528 17.5381 25.5755 17.1365C25.9917 16.7393 26.2876 16.2455 26.4361 15.7077C26.8243 13.6703 27.0131 11.5999 26.9997 9.52584C27.0289 7.44302 26.8404 5.36285 26.4372 3.31921V3.32034ZM10.802 13.352V5.64909L17.8445 9.50109L10.802 13.352Z"
-									fill="#fff" />
-							</svg>
-						</a>
+						<a class="channel__link channel__mobile-link white-btn" href="#">Перейти на канал</a>
 					</div>
 				</div>
 			</section>
@@ -534,8 +502,7 @@
 
 							<button class="join-us__btn white-btn" type="submit">Отправить</button>
 
-							<p class="join-us__privacy">Нажимая на кнопку отправить вы соглашаетесь<br>с <a
-									class="join-us__privacy-link" href="#">условиями конфиденциальности</a> на сайте</p>
+							<p class="join-us__privacy">Нажимая на кнопку отправить вы соглашаетесь<br>с <a class="join-us__privacy-link" href="#">условиями конфиденциальности</a> на сайте</p>
 						</form>
 					</div>
 				</div>
@@ -548,7 +515,7 @@
 					<div class="questions__content">
 						<div class="questions__item dropdown">
 							<div class="questions__item-head dropdown-btn">
-								<span class="questions__item-title">С какого возраста можно заниматься боксом?</span>
+								<h3 class="questions__item-title">С какого возраста можно заниматься боксом?</h3>
 
 								<div class="questions__item-plus-icon">
 									<span class="questions__item-plus-line"></span>
@@ -566,12 +533,12 @@
 
 						<div class="questions__item dropdown">
 							<div class="questions__item-head dropdown-btn">
-								<span class="questions__item-title">Чем отличается любительский бокс от профессионального?<span>
+								<h3 class="questions__item-title">Чем отличается любительский бокс от профессионального?</h3>
 
-										<div class="questions__item-plus-icon">
-											<span class="questions__item-plus-line"></span>
-											<span class="questions__item-plus-line"></span>
-										</div>
+								<div class="questions__item-plus-icon">
+									<span class="questions__item-plus-line"></span>
+									<span class="questions__item-plus-line"></span>
+								</div>
 							</div>
 
 							<p class="questions__item-answer dropdown-slide-content">
@@ -586,8 +553,7 @@
 
 						<div class="questions__item dropdown">
 							<div class="questions__item-head dropdown-btn">
-								<span class="questions__item-title">Кто является представителем WBC, WBО, WBA, IBF в
-									Казахстане?</span>
+								<h3 class="questions__item-title">Кто является представителем WBC, WBО, WBA, IBF в Казахстане?</h3>
 
 								<div class="questions__item-plus-icon">
 									<span class="questions__item-plus-line"></span>
@@ -603,7 +569,7 @@
 
 						<div class="questions__item dropdown">
 							<div class="questions__item-head dropdown-btn">
-								<span class="questions__item-title">Что нужно, чтобы стать профессиональным боксёром?</span>
+								<h3 class="questions__item-title">Что нужно, чтобы стать профессиональным боксёром?</h3>
 
 								<div class="questions__item-plus-icon">
 									<span class="questions__item-plus-line"></span>
@@ -619,8 +585,7 @@
 
 						<div class="questions__item dropdown">
 							<div class="questions__item-head dropdown-btn">
-								<span class="questions__item-title">Чем отличается любительский бокс от
-									профессионального?</span>
+								<h3 class="questions__item-title">Чем отличается любительский бокс от профессионального?</h3>
 
 								<div class="questions__item-plus-icon">
 									<span class="questions__item-plus-line"></span>
@@ -709,15 +674,13 @@
 			</div>
 		</main>
 
-		<!-- Разобраться с заголовком колонки -->
-		<!-- Сделать почту и адрес ссылками и привязать карту -->
 		<footer class="footer">
 			<div class="footer__top">
 				<div class="container">
 					<div class="footer__top-inner">
 						<div class="footer__top-column">
 							<div class="footer__contacts">
-								<div class="footer__contacts-title">Контакты и адрес</div>
+								<h2 class="footer__contacts-title">Контакты и адрес</h2>
 
 								<p class="footer__address">г. Алматы, пр. Абая 150/230, блок 6</p>
 
@@ -726,29 +689,23 @@
 								<a class="footer__contact-btn green-btn open-popup" href="#contact-popup">Связаться с нами</a>
 							</div>
 						</div>
-						<!-- Сделать ховер на соц сети -->
+
 						<div class="footer__top-column">
 							<div class="footer__social">
-								<div class="footer__social-title">Подпишитесь на нас</div>
+								<h2 class="footer__social-title">Подпишитесь на нас</h2>
 
 								<div class="footer__social-list-wrapper">
 									<ul class="footer__social-list">
 										<li class="footer__social-item">
-											<a class="footer__social-link" href="#">
-												<img class="footer__social-img" src="img/facebook.svg" alt="image">
-											</a>
+											<a class="footer__social-link icon-facebook" href="#"></a>
 										</li>
 
 										<li class="footer__social-item">
-											<a class="footer__social-link" href="#">
-												<img class="footer__social-img" src="img/youtube.svg" alt="image">
-											</a>
+											<a class="footer__social-link icon-youtube" href="#"></a>
 										</li>
 
 										<li class="footer__social-item">
-											<a class="footer__social-link" href="#">
-												<img class="footer__social-img" src="img/instagram.svg" alt="image">
-											</a>
+											<a class="footer__social-link icon-instagram" href="#"></a>
 										</li>
 									</ul>
 
@@ -766,7 +723,6 @@
 				</div>
 			</div>
 
-			<!-- Разобраться нужен ли тут nav -->
 			<div class="footer__menu footer-menu">
 				<div class="container">
 					<nav class="footer-menu__nav">

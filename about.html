@@ -22,7 +22,6 @@
 							<img class="header__logo" src="img/logo.svg" alt="logo">
 						</a>
 
-						<!-- Разобраться, чем должен быть этот элемент -->
 						<div class="header__logo-text">
 							Казахстанская федерация<br>профессионального бокса
 						</div>
@@ -31,9 +30,7 @@
 							<form class="header__search-form" action="#">
 								<input class="header__search-input" type="text" placeholder="Поиск по сайту">
 
-								<button class="header__search-btn" type="submit">
-									<img class="header__search-img" src="img/search.svg" alt="image">
-								</button>
+								<button class="header__search-btn icon-search" type="submit"></button>
 							</form>
 						</div>
 
@@ -128,131 +125,125 @@
 				</div>
 			</div>
 
-			<nav class="header__mobile-menu mobile-menu">
-				<ul class="mobile-menu__list">
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link mobile-menu__list-link--active">Главная</a>
-					</li>
+			<div class="header__mobile-menu mobile-menu">
+				<nav class="mobile-menu__nav">
+					<ul class="mobile-menu__list">
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Главная</a>
+						</li>
 
-					<li class="mobile-menu__list-item dropdown">
-						<a href="#" class="mobile-menu__list-link dropdown-btn">О федерации</a>
+						<li class="mobile-menu__list-item dropdown">
+							<a href="#" class="mobile-menu__list-link dropdown-btn">О федерации</a>
 
-						<ul class="mobile-menu__drop-list">
-							<li class="mobile-menu__drop-item">
-								<a href="#" class="mobile-menu__drop-link">Общая информация</a>
-							</li>
+							<ul class="mobile-menu__drop-list">
+								<li class="mobile-menu__drop-item">
+									<a href="#" class="mobile-menu__drop-link">Общая информация</a>
+								</li>
 
-							<li class="mobile-menu__drop-item">
-								<a href="#" class="mobile-menu__drop-link">Филиалы по РК</a>
-							</li>
-						</ul>
-					</li>
+								<li class="mobile-menu__drop-item">
+									<a href="#" class="mobile-menu__drop-link">Филиалы по РК</a>
+								</li>
+							</ul>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Боксёры</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Боксёры</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Пояс чемпиона РК</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Пояс чемпиона РК</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Документы</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Документы</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Клубы</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Клубы</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Сотрудничество</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Сотрудничество</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Магазин</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Магазин</a>
+						</li>
 
-					<li class="mobile-menu__list-item">
-						<a href="#" class="mobile-menu__list-link">Новости</a>
-					</li>
+						<li class="mobile-menu__list-item">
+							<a href="#" class="mobile-menu__list-link">Новости</a>
+						</li>
 
-					<li class="mobile-menu__lang mobile-lang dropdown">
-						<button class="mobile-lang__btn dropdown-btn" type="button">
-							<img class="mobile-lang__btn-img" src="img/ru-flag.png" alt="image">
-							<span class="mobile-lang__btn-text">RU</span>
-						</button>
-
-						<ul class="mobile-lang__list">
-							<li class="mobile-lang__list-item">
-								<a class="mobile-lang__list-link" href="#">
-									<img class="mobile-lang__list-img" src="img/ru-flag.png" alt="image">
-
-									<span class="mobile-lang__list-text">RU</span>
-								</a>
-							</li>
-
-							<li class="mobile-lang__list-item">
-								<a class="mobile-lang__list-link" href="#">
-									<img class="mobile-lang__list-img" src="img/eng-flag.png" alt="image">
-
-									<span class="mobile-lang__list-text">ENG</span>
-								</a>
-							</li>
-
-							<li class="mobile-lang__list-item">
-								<a class="mobile-lang__list-link" href="#">
-									<img class="mobile-lang__list-img" src="img/kz-flag.png" alt="image">
-
-									<span class="mobile-lang__list-text">KZ</span>
-								</a>
-							</li>
-						</ul>
-					</li>
-
-					<li class="mobile-menu__search">
-						<form class="mobile-menu__search-form" action="#">
-							<input class="mobile-menu__search-input" type="text" placeholder="Поиск по сайту">
-
-							<button class="mobile-menu__search-btn" type="submit">
-								<img class="mobile-menu__search-img" src="img/search.svg" alt="image">
+						<li class="mobile-menu__lang mobile-lang dropdown">
+							<button class="mobile-lang__btn dropdown-btn" type="button">
+								<img class="mobile-lang__btn-img" src="img/ru-flag.png" alt="image">
+								<span class="mobile-lang__btn-text">RU</span>
 							</button>
-						</form>
-					</li>
 
-					<li class="mobile-menu__footer">
-						<div class="mobile-menu__social">
-							<ul class="mobile-menu__social-list">
-								<li class="mobile-menu__social-item">
-									<a class="mobile-menu__social-link" href="#">
-										<img class="mobile-menu__social-img" src="img/youtube.svg" alt="image">
+							<ul class="mobile-lang__list">
+								<li class="mobile-lang__list-item">
+									<a class="mobile-lang__list-link" href="#">
+										<img class="mobile-lang__list-img" src="img/ru-flag.png" alt="image">
+
+										<span class="mobile-lang__list-text">RU</span>
 									</a>
 								</li>
 
-								<li class="mobile-menu__social-item">
-									<a class="mobile-menu__social-link" href="#">
-										<img class="mobile-menu__social-img" src="img/instagram.svg" alt="image">
+								<li class="mobile-lang__list-item">
+									<a class="mobile-lang__list-link" href="#">
+										<img class="mobile-lang__list-img" src="img/eng-flag.png" alt="image">
+
+										<span class="mobile-lang__list-text">ENG</span>
 									</a>
 								</li>
 
-								<li class="mobile-menu__social-item">
-									<a class="mobile-menu__social-link" href="#">
-										<img class="mobile-menu__social-img" src="img/facebook.svg" alt="image">
+								<li class="mobile-lang__list-item">
+									<a class="mobile-lang__list-link" href="#">
+										<img class="mobile-lang__list-img" src="img/kz-flag.png" alt="image">
+
+										<span class="mobile-lang__list-text">KZ</span>
 									</a>
 								</li>
 							</ul>
+						</li>
 
-							<p class="mobile-menu__social-title">Фан-зона</p>
-						</div>
+						<li class="mobile-menu__search">
+							<form class="mobile-menu__search-form" action="#">
+								<input class="mobile-menu__search-input" type="text" placeholder="Поиск по сайту">
 
-						<div class="mobile-menu__online online">
-							<span class="online__circle"></span>
+								<button class="mobile-menu__search-btn icon-search" type="submit"></button>
+							</form>
+						</li>
 
-							<span class="online__text">Онлайн <span class="online__value">50</span> человек</span>
-						</div>
-					</li>
-				</ul>
-				<div class="mobile-menu__background"></div>
-			</nav>
+						<li class="mobile-menu__footer">
+							<div class="mobile-menu__social">
+								<ul class="mobile-menu__social-list">
+									<li class="mobile-menu__social-item">
+										<a class="mobile-menu__social-link icon-youtube" href="#"></a>
+									</li>
+
+									<li class="mobile-menu__social-item">
+										<a class="mobile-menu__social-link icon-instagram" href="#"></a>
+									</li>
+
+									<li class="mobile-menu__social-item">
+										<a class="mobile-menu__social-link icon-facebook" href="#"></a>
+									</li>
+								</ul>
+
+								<p class="mobile-menu__social-title">Фан-зона</p>
+							</div>
+
+							<div class="mobile-menu__online online">
+								<span class="online__circle"></span>
+
+								<span class="online__text">Онлайн <span class="online__value">50</span> человек</span>
+							</div>
+						</li>
+					</ul>
+					<div class="mobile-menu__background"></div>
+				</nav>
+			</div>
 
 			<div class="header__bottom header-bottom">
 				<div class="container">
@@ -269,9 +260,7 @@
 							<form class="header-bottom__search-form" action="#">
 								<input class="header-bottom__search-input" type="text" placeholder="Поиск по сайту ...">
 
-								<button class="header-bottom__search-btn" type="submit">
-									<img class="header-bottom__search-img" src="img/search.svg" alt="image">
-								</button>
+								<button class="header-bottom__search-btn icon-search" type="submit"></button>
 							</form>
 						</div>
 					</div>
@@ -348,7 +337,7 @@
 				<div class="container">
 					<h2 class="history__title default-title">История федерации</h2>
 
-					<h4 class="history__subtitle">Как зарождалась федерация:</h4>
+					<h3 class="history__subtitle">Как зарождалась федерация:</h3>
 					<ul class="history__list">
 						<li class="history__list-item">
 							5 декабря 1989 года, в г. Алма-Ата – открылся первый профессиональный клуб бокса «Казахстан». Президентом стал – Конакбаев Серик Керимбекович.
@@ -363,7 +352,7 @@
 						</li>
 					</ul>
 
-					<h4 class="history__subtitle">Значительный вклад в развитие бокса в Казахстане внесли президенты Казахстанской федерации профессионального бокса:</h4>
+					<h3 class="history__subtitle">Значительный вклад в развитие бокса в Казахстане внесли президенты Казахстанской федерации профессионального бокса:</h3>
 					<ul class="history__list">
 						<li class="history__list-item">
 							1992 – 2003 гг. – Серик Конакбаев
@@ -378,7 +367,7 @@
 						</li>
 					</ul>
 
-					<h4 class="history__subtitle">А также вице-президенты: </h4>
+					<h3 class="history__subtitle">А также вице-президенты: </h3>
 					<ul class="history__list">
 						<li class="history__list-item">
 							Кайрат Шотбаков
@@ -484,6 +473,46 @@
 					</div>
 				</div>
 			</section>
+
+			<section class="partners section">
+				<div class="container">
+					<h2 class="partners__title default-title">Наши партнеры</h2>
+
+					<div class="partners__content">
+						<a class="partners__item" href="#">
+							<p class="partners__name">Forsage Energy Drink</p>
+						</a>
+
+						<a class="partners__item" href="#">
+							<img class="partners__logo" src="img/content/partners/habar.png" alt="image">
+						</a>
+					</div>
+
+					<h2 class="partners__title default-title">Выражаем благодарность</h2>
+
+					<div class="partners__content">
+						<a class="partners__item" href="#">
+							<p class="partners__name">АО «Найзагай»</p>
+						</a>
+
+						<a class="partners__item" href="#">
+							<p class="partners__name">ТОО «СОНАР»</p>
+						</a>
+
+						<a class="partners__item" href="#">
+							<p class="partners__name">ТОО «Керуен»</p>
+						</a>
+
+						<a class="partners__item" href="#">
+							<p class="partners__name">АО «НСК»</p>
+						</a>
+					</div>
+
+					<div class="partners__btn-wrapper">
+						<a class="partners__btn green-btn" href="#">Подробнее</a>
+					</div>
+				</div>
+			</section>
 		</main>
 
 		<footer class="footer">
@@ -492,7 +521,7 @@
 					<div class="footer__top-inner">
 						<div class="footer__top-column">
 							<div class="footer__contacts">
-								<div class="footer__contacts-title">Контакты и адрес</div>
+								<h2 class="footer__contacts-title">Контакты и адрес</h2>
 
 								<p class="footer__address">г. Алматы, пр. Абая 150/230, блок 6</p>
 
@@ -501,29 +530,23 @@
 								<a class="footer__contact-btn green-btn open-popup" href="#contact-popup">Связаться с нами</a>
 							</div>
 						</div>
-						<!-- Сделать ховер на соц сети -->
+
 						<div class="footer__top-column">
 							<div class="footer__social">
-								<div class="footer__social-title">Подпишитесь на нас</div>
+								<h2 class="footer__social-title">Подпишитесь на нас</h2>
 
 								<div class="footer__social-list-wrapper">
 									<ul class="footer__social-list">
 										<li class="footer__social-item">
-											<a class="footer__social-link" href="#">
-												<img class="footer__social-img" src="img/facebook.svg" alt="image">
-											</a>
+											<a class="footer__social-link icon-facebook" href="#"></a>
 										</li>
 
 										<li class="footer__social-item">
-											<a class="footer__social-link" href="#">
-												<img class="footer__social-img" src="img/youtube.svg" alt="image">
-											</a>
+											<a class="footer__social-link icon-youtube" href="#"></a>
 										</li>
 
 										<li class="footer__social-item">
-											<a class="footer__social-link" href="#">
-												<img class="footer__social-img" src="img/instagram.svg" alt="image">
-											</a>
+											<a class="footer__social-link icon-instagram" href="#"></a>
 										</li>
 									</ul>
 
@@ -541,7 +564,6 @@
 				</div>
 			</div>
 
-			<!-- Разобраться нужен ли тут nav -->
 			<div class="footer__menu footer-menu">
 				<div class="container">
 					<nav class="footer-menu__nav">
